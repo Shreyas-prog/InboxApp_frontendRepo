@@ -1,36 +1,38 @@
-# Nuxt Minimal Starter
+# 📬 Inbox App – Frontend
 
-## Setup
+This is the frontend for the Inbox Task Manager app, built using Vue 3 and Pinia. It connects to a backend API to perform task management operations like create, update, delete, and view.
 
-Make sure to install dependencies:
+---
 
-# npm
-npm install
+## 🔗 Live URL
 
-# pnpm
-pnpm install
+**Frontend:** https://inboxapp-zeta.vercel.app/  
+**Backend:** https://inboxapp-backend.onrender.com/api
 
-# yarn
-yarn install
+---
 
-# bun
-bun install
-```
+## 🛠 Tech Stack
 
-## Development Server
+- Vue 3
+- Pinia
+- Tailwind CSS
+- Vite
+- Volt(Primevue)
+- Deployed on Vercel
 
-Start the development server on `http://localhost:3000`:
+---
+
+## 📦 Features
+
+- View all tasks
+- Add new task
+- Update existing task
+- Delete task
+
+---
+
+## 🔧 Setup
 
 ```bash
-# npm
+npm install
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
