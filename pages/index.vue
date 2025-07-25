@@ -66,6 +66,32 @@
                 </template>
             </DataView>
         </div>
+        <div v-else class="flex flex-col gap-4 mx-8">
+            <div class="flex mb-4 border-b border-gray-300 pb-3">
+                <Skeleton size="2rem" class="mr-2"></Skeleton>
+                <div>
+                    <Skeleton width="10rem" class="mb-2"></Skeleton>
+                    <Skeleton width="5rem" class="mb-2"></Skeleton>
+                    <Skeleton height=".5rem"></Skeleton>
+                </div>
+            </div>
+            <div class="flex mb-4 border-b border-gray-300 pb-3">
+                <Skeleton size="2rem" class="mr-2"></Skeleton>
+                <div>
+                    <Skeleton width="10rem" class="mb-2"></Skeleton>
+                    <Skeleton width="5rem" class="mb-2"></Skeleton>
+                    <Skeleton height=".5rem"></Skeleton>
+                </div>
+            </div>
+            <div class="flex mb-4 border-b border-gray-300 pb-3">
+                <Skeleton size="2rem" class="mr-2"></Skeleton>
+                <div>
+                    <Skeleton width="10rem" class="mb-2"></Skeleton>
+                    <Skeleton width="5rem" class="mb-2"></Skeleton>
+                    <Skeleton height=".5rem"></Skeleton>
+                </div>
+            </div>
+        </div>
         <Button v-if="!showTaskCard" label="Add task" icon="pi pi-plus" class="mx-4 border-0! bg-white! text-sm! font-normal! text-gray-500! hover:text-[#dc4c3e]!" @click="showTaskCard = true"/>
 
         <Card class="mx-4 border border-gray-200 shadow-none! p-2!" v-else>
@@ -157,6 +183,7 @@ import Select from '~/src/volt/Select.vue';
 import SelectButton from '~/src/volt/SelectButton.vue';
 import Button from '~/src/volt/Button.vue';
 import Badge from '~/src/volt/Badge.vue'
+import Skeleton from '~/src/volt/Skeleton.vue';
 
 const storeData = Apistore()
 const defaultData = DefaultDataStore()
